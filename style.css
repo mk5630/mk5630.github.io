@@ -1,3 +1,6 @@
+body, h1, h2, h3, h4, h5, p, a {
+  font-family: 'Cormorant Garamond', serif;
+}
 header {
   width: 100%;
   height: 100%;
@@ -6,12 +9,15 @@ header {
   background-position: center;
   background-size: cover;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
   h1{
   color: rgba(255, 255, 255, 0.8);
-  font-size: 50px;
+  font-size: 70px;
   margin: 0;
   padding: 0;
+  font-weight: 100;
 
 }
 .heading-box {
@@ -22,6 +28,7 @@ header {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   padding-top: 95px;
+  white-space: nowrap;
 }
 .ghost-btn a{
   border: 4px solid rgba(255, 255, 255, 0.8);
@@ -62,7 +69,49 @@ header {
   text-decoration: none;
 
 }
-
 .nav :hover{
-  background: pink;
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  transform: translateY(-2px);
+}
+
+
+.section {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  margin: 0.5rem;
+  padding: 0.2rem;
+
+}
+.section-2 { background-color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+
+  }
+.section-3 { background-color: orange; }
+.section-4 { background-color: grey; }
+.section-5 { background-color: crimson; }
+
+.rows{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  }
+
+.row {
+display: flex;
+margin-bottom: 1rem;
+}
+
+.row-text{
+  background-color: rgba(0,0,0,0.2);
+  padding: 2rem;
+
+}
+.row-number{
+  padding: 2rem;
 }
